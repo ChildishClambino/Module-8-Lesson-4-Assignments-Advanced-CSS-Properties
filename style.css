@@ -1,0 +1,59 @@
+.background-fade {
+    background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
+.interactive-button {
+    background-color: rgba(0, 128, 0, 0.8); /* Solid green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.interactive-button:hover {
+    background-color: rgba(0, 128, 0, 0.5); /* Lighter green on hover */
+}
+
+/* Task 1: Smooth Hover Transition for Links */
+a {
+    color: blue;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Task 2: Animated Button on Click */
+@keyframes button-click {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.interactive-button:active {
+    animation: button-click 0.2s;
+}
+
+/* Task 3: Continuous Rotation Animation for an Icon */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.rotating-icon {
+    animation: rotate 2s linear infinite;
+}
